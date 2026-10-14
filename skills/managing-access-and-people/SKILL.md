@@ -19,9 +19,9 @@ Read, Edit (write) and Manage. Folders a person cannot open are hidden from them
 
 | The person wants | Read |
 |---|---|
-| A folder shared or access taken away; why someone can or cannot see it | [references/sharing.md](references/sharing.md) |
+| A folder shared or access taken away; why someone can or cannot see it; an access request answered | [references/sharing.md](references/sharing.md) |
 | An access audit: who sees what, over-sharing | [references/audit.md](references/audit.md) |
-| A new person invited and set up | [references/onboarding.md](references/onboarding.md) |
+| A new person invited and set up; an invitation resent or revoked; a role, title or capacity changed; a custom role | [references/onboarding.md](references/onboarding.md) |
 
 Removing a member who leaves, and creating a new workspace, are done in the Rintaro web app for now: say so.
 
@@ -30,7 +30,8 @@ Removing a member who leaves, and creating a new workspace, are done in the Rint
 - [ ] Read the current access first (`access_report` or `get_space_access`), with the reasons.
 - [ ] Propose the smallest change that does the job, and say its effect in words: who gains, who loses.
 - [ ] One folder at a time, an explicit yes for each. Manage or Restricted need a second, separate yes.
-- [ ] Make the change with `set_space_grants` (or `invite_person`), keep the activity id, check the result.
+- [ ] Make the change with `change_space_grant` (one subject) or `set_space_grants` (the whole list), or
+      `invite_person`, `manage_invitation`, `update_person`; keep the activity id, check the result.
 
 ## Safety (always)
 

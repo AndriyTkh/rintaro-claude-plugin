@@ -1,7 +1,7 @@
 {
   "name": "rintaro",
   "displayName": "Rintaro",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Connects Claude to Rintaro, the team's work OS: your tasks, folders, deadlines and timesheets, with exactly your Rintaro rights. Sign in to Rintaro once when Claude asks.",
   "author": {
     "name": "Rintaro"
