@@ -1,0 +1,39 @@
+# Releases the plugin when a version tag (rintaro--v<version>) is pushed: zips the installed files (no evals, no
+# marketplace file, no workflows) and attaches the zip to a release, for people who upload it in the Claude app.
+# The files and the tag come from the plugin's source repository; this repository holds no other code.
+name: release
+
+on:
+  push:
+    tags: ["rintaro--v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zip and release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.ref_name }}
+        run: |
+          if gh release view "$TAG" >/dev/null 2>&1; then echo "$TAG is released already"; exit 0; fi
+          v="${TAG#rintaro--v}"
+          git ls-files | grep -v -e '^evals/' -e '^\.github/' -e '^\.claude-plugin/marketplace\.json$' \
+            | zip -X -q "rintaro-claude-plugin-$v.zip" -@
+          gh release create "$TAG" "rintaro-claude-plugin-$v.zip" --title "Rintaro for Claude $v" --notes "$(cat <<'EOF'
+          **Claude Code:**
+
+          ```
+          /plugin marketplace add https://github.com/${{ github.repository }}.git
+          /plugin install rintaro@rintaro
+          ```
+
+          **Claude app** (Pro/Max): download the zip below, then Customize, Plugins, Add, Upload plugin.
+
+          The first time Claude uses Rintaro it asks you to sign in to Rintaro. Claude then sees exactly what you can see in Rintaro, nothing more.
+          EOF
+          )"
