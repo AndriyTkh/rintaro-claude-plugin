@@ -1,0 +1,11 @@
+{
+  "name": "rintaro",
+  "displayName": "Rintaro",
+  "version": "0.2.0",
+  "description": "Connects Claude to Rintaro, the team's work OS: your tasks, folders, deadlines and timesheets, with exactly your Rintaro rights. Sign in to Rintaro once when Claude asks.",
+  "author": {
+    "name": "Rintaro"
+  },
+  "homepage": "https://rintaro-817689849742.europe-central2.run.app/connected-apps",
+  "keywords": ["rintaro", "tasks", "work-os", "timesheets", "grants"]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "rintaro",
+  "owner": {
+    "name": "Rintaro"
+  },
+  "description": "The Rintaro plugin for Claude: the Rintaro connector, and later the Rintaro skills.",
+  "plugins": [
+    {
+      "name": "rintaro",
+      "source": "./",
+      "description": "Connects Claude to Rintaro with your own Rintaro rights."
+    }
+  ]
+}

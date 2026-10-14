@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rintaro": {
+      "type": "http",
+      "url": "https://rintaro-817689849742.europe-central2.run.app/mcp"
+    }
+  }
+}
