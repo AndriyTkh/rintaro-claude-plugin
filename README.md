@@ -26,7 +26,7 @@ workflow; the work itself is done by Rintaro's tools, with your rights.
 |---|---|
 | managing-rintaro-files | Finding files, filing an import, storage, duplicates, getting an archived file back |
 | reorganizing-folders | Moving, renaming and merging folders or reshaping a task tree, as a plan you confirm |
-| preparing-files-for-sync | Getting a folder on your computer ready for Rintaro: names, junk, duplicates, large files |
+| preparing-files-for-sync | Getting a folder on your computer ready for Rintaro (names, junk, duplicates, large files), then uploading it with the upload tools |
 | checking-sync-and-health | A health check of the workspace or your own work; sync status comes with Rintaro Sync |
 | planning-work-and-deadlines | Your day or week, deadlines, tasks from notes, a new grant or event, timesheets |
 | managing-access-and-people | Sharing a folder, explaining who sees what and why, access audits, a new colleague |

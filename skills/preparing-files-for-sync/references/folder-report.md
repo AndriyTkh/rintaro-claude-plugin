@@ -15,4 +15,4 @@ Tools: the local file tools, `check_names`.
    - likely duplicates (equal size; confirm with a hash only within equal sizes).
 4. Write `folder-report.csv` inside `_Rintaro review/<date>/` (path, size, modified, problem, suggested fix) and
    show a short summary: totals, then the problems, biggest first.
-5. Offer the next steps (junk, names, duplicates, destinations) one at a time. Change nothing yet.
+5. Offer the next steps (junk, names, duplicates, destinations, upload) one at a time. Change nothing yet.

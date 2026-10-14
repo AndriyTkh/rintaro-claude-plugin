@@ -10,4 +10,4 @@ Tools: `get_workspace_guide`, `list_spaces`, `get_space_access`, `create_space`.
    manages; otherwise say that the folder's people will see them.
 4. Missing destination folders: list them; create them with `create_space` only after an explicit yes, one by one,
    and keep the activity ids for undo.
-5. The upload itself happens in the Rintaro web app (folder upload) or, later, through Rintaro Sync; say which.
+5. Offer to do the upload from here with the upload tools (the upload workflow in SKILL.md), or the person can use the Rintaro web app (Files, Upload folder); Rintaro Sync comes later.

@@ -26,6 +26,7 @@ their files, say that this needs Claude Code or Cowork and stop. The name rules 
 | Duplicate files on the computer cleaned up | [references/local-duplicates.md](references/local-duplicates.md) |
 | Very large or very old files dealt with | [references/large-and-old-files.md](references/large-and-old-files.md) |
 | To know where each folder should go in Rintaro | [references/import-plan.md](references/import-plan.md) |
+| The folder (or a file) uploaded to Rintaro from here | [references/upload-to-rintaro.md](references/upload-to-rintaro.md) |
 
 Start with the folder report unless the person asked for one specific step.
 
@@ -34,7 +35,7 @@ Start with the folder report unless the person asked for one specific step.
 - [ ] Report first; change nothing until the person has seen it.
 - [ ] Before any move or rename, write the row to `_Rintaro review/<date>/changes.csv` inside the folder.
 - [ ] Confirm each batch (at most 200 items or 20 GB) with an explicit yes; check each batch afterwards.
-- [ ] End with the report's location, what changed, and how to undo.
+- [ ] End with the report's location, what changed, and how to undo, then offer to upload the folder to Rintaro (upload-to-rintaro.md); upload only after an explicit yes.
 
 ## Safety (always)
 
