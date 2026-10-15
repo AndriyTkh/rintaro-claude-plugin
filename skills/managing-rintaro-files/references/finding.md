@@ -1,10 +1,16 @@
 # Finding a file
 
-Tools: `search_files`, `list_files`, `get_file`, `list_spaces`, `list_archive`.
+Tools: `find_files`, `search`, `list_files`, `get_file`, `list_spaces`, `list_archive` (`search_files` still works,
+as a plain name match).
 
 1. Turn the request into a few name fragments (a word from the title, a project code, a year the person said).
-   `search_files` matches part of the file name in every folder the person can read; contents are not searched.
-2. Try two or three fragments. If the person named a folder, use `list_spaces` to find it and `list_files` on it.
+   `search` limited to files (kinds: file) ranks files by name across every folder the person can read. It takes
+   the web search syntax: several words, prefix*, ~typo, type:pdf, updated:last-30d, owner:me. Contents are not
+   searched yet.
+2. When the person knows where it is or what it is called, use `find_files` with a glob, as with Glob: a folder
+   path, `**` for any depth, `*` within a name, {a,b} for alternatives (for example **/*.{step,stl}). Its path,
+   type, added-by and modified-after arguments narrow it. If the person named a folder, `list_spaces` finds it and
+   `list_files` lists it.
 3. Show at most five matches, best first: name, folder path, last change and who made it (`get_file` gives the
    path, versions and who uploaded each).
 4. Nothing found: say "not found, or not shared with you". Offer to look in the archive (`list_archive`) and to
