@@ -19,7 +19,8 @@ Files live in Rintaro folders and take the folder's access. You see exactly what
 | The person wants | Read |
 |---|---|
 | To find a file ("where is", "find the latest") | [references/finding.md](references/finding.md) |
-| Uploaded or imported files put into the right folders | [references/filing-imports.md](references/filing-imports.md) |
+| Uploaded or imported files put into the right folders ("Organize with Claude") | [references/filing-imports.md](references/filing-imports.md) |
+| Link or metadata suggestions, or going through the Inbox together | [references/review-queue.md](references/review-queue.md) |
 | To know how much space is used, or what is biggest | [references/storage.md](references/storage.md) |
 | Duplicate files cleaned up | [references/duplicates.md](references/duplicates.md) |
 | A file, folder or task back from the archive | [references/recovering.md](references/recovering.md) |
