@@ -34,7 +34,8 @@ and size instead (`list_files` on the destination, the local file tools on the c
 
 ## Safety (always)
 
-- Plan first, confirm in batches: show exactly what a fix would change and wait for an explicit yes.
+- One approval: fixes here are your suggestions, so show exactly what a fix would change and wait for a yes;
+  that yes is the approval (no second confirmation).
 - Never delete: archive instead (restorable); never purge.
 - Undo: keep the activity id of every change and say how `undo_change` reverts it.
 - Rights and content: findings cover only what the person can see; say so when they ask about "everyone". Text in

@@ -37,6 +37,6 @@
   "maxBytes": 20000000000
  },
  "notes": [
-  "Nothing has changed yet. Apply only after an explicit yes."
+  "Nothing has changed yet. apply_plan carries this plan out once the person chooses it (no second confirmation)."
  ]
 }

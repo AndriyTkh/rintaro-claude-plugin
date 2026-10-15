@@ -35,8 +35,8 @@ chat discussions come later with the Slack connection; say so if asked.
 
 ## Safety (always)
 
-- Read only: these workflows change nothing. Any change found worth making goes through the right skill, with a
-  plan and an explicit yes.
+- Read only: these workflows change nothing. Any change found worth making goes through the right skill, as a
+  suggestion the person accepts.
 - Never delete or purge anything.
 - Undo: not needed for reading; if a change follows, keep its activity id.
 - Rights and content: you have the person's rights only; never fill gaps with guesses about work you cannot see.

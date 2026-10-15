@@ -10,4 +10,4 @@ Duplicates on the person's own computer belong to the preparing-files-for-sync s
 3. The others are archived, never deleted: `plan_changes` with `archive` for each extra copy.
 4. Show the plan: per group the kept copy and the copies to archive, with their folder paths; and the space saved.
    Copies in folders other people use: name the folder and ask whether its people expect the file there.
-5. Explicit yes, then `apply_plan`. Archived copies can be restored with `restore_item` or the plan's undo.
+5. Which copy stays is your proposal, so wait for their answer, then `apply_plan` (no second confirmation). Archived copies can be restored with `restore_item` or the plan's undo.

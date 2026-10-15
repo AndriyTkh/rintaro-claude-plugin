@@ -1,6 +1,6 @@
 # Workspace health check
 
-Tools: `health_report`, `get_task`, `workload`, `update_task`, `assign_task`, `plan_changes`, `apply_plan`.
+Tools: `health_report`, `get_task`, `workload`, `update_task`, `assign_task`, `apply_changes`.
 The prompt `health_check` holds the same steps for clients without this skill.
 
 1. Call `health_report` with scope "team" (or "me" when the person asks about their own work, or `spaceId` for
@@ -10,8 +10,8 @@ The prompt `health_check` holds the same steps for clients without this skill.
    (code, title, who, date) and the suggested fix in plain words. Nothing to fix: say so in one line.
 3. Offer fixes one finding at a time:
    - one task: the exact field change, then `update_task` on a yes;
-   - several tasks (for example new due dates for ten overdue tasks): one `plan_changes` with an op "edit_task" change per
-     task, shown as a table, then `apply_plan` on a yes;
+   - several tasks (for example new due dates for ten overdue tasks): show a table of the new values; on a yes, one
+     `apply_changes` with an op "edit_task" change per task;
    - an assignee: `assign_task` per task, naming the person, after a yes.
 4. Overloaded people: show `workload` and suggest moving or proposing work; never reassign without a yes.
 5. End with the fixes applied, the activity ids, and what is left.

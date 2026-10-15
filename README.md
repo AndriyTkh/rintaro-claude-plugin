@@ -25,16 +25,17 @@ workflow; the work itself is done by Rintaro's tools, with your rights.
 | Skill | For |
 |---|---|
 | managing-rintaro-files | Finding files, filing an import, storage, duplicates, getting an archived file back |
-| reorganizing-folders | Moving, renaming and merging folders or reshaping a task tree, as a plan you confirm |
+| reorganizing-folders | Moving, renaming and merging folders or reshaping a task tree, done as you ask, in one undoable step |
 | preparing-files-for-sync | Getting a folder on your computer ready for Rintaro (names, junk, duplicates, large files), then uploading it with the upload tools |
 | checking-sync-and-health | A health check of the workspace or your own work; sync status comes with Rintaro Sync |
 | planning-work-and-deadlines | Your day or week, deadlines, tasks from notes, a new grant or event, timesheets |
 | managing-access-and-people | Sharing a folder, explaining who sees what and why, access audits, a new colleague |
 | reporting-on-work | Weekly status, catching up after time away, hours, grant progress |
 
-Bigger changes (many moves, renames or task edits) are shown first as a plan, with who would gain or lose access.
-Nothing changes until you say yes, and the whole plan can be undone in one step. Claude never deletes: it archives,
-and archived items can be restored.
+One approval: when you ask for a change, your request and your Claude app's permission prompt are the approval, and
+Rintaro does not ask again. Claude reports what changed and who gained or lost access, and a whole batch can be undone
+in one step. Claude's own suggestions are shown first and wait for your yes; ask for a plan first whenever you want to
+see one. Claude never deletes: it archives, and archived items can be restored.
 
 Maintainers: `evals/` holds the test cases for `claude plugin eval` (trigger, near-miss and behaviour cases per
 skill, in English and Ukrainian). It is not part of the installed plugin.

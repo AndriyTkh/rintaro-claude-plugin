@@ -39,8 +39,8 @@ Start with the folder report unless the person asked for one specific step.
 
 ## Safety (always)
 
-- Plan first, confirm in batches: show what would change and wait for an explicit yes, at most 200 items or
-  20 GB per yes.
+- One approval: what to move or rename is your suggestion from the report, so wait for a yes per batch (at most
+  200 items or 20 GB); that yes is the approval, with no second confirmation.
 - Never delete: move to `_Rintaro review/<date>/` inside the chosen folder (same drive). Never empty the Recycle
   Bin, never overwrite a file, never move across drives.
 - Undo: log every move and rename in `changes.csv` before doing it; moving the rows back, newest first, undoes it.
