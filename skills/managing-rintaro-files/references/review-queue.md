@@ -5,8 +5,11 @@ Tools: `list_review_items`, `resolve_review_item`, `suggest_links`, `suggest_met
 
 The Inbox holds suggestions next to notifications: links between files and tasks, document metadata, plans
 waiting for a look, and conflicts between documents. Rintaro's link check adds link suggestions after every
-upload; you add yours with `suggest_links` and `suggest_metadata`. Each item is the person's own and names
-only what they can see.
+upload; you add yours with `suggest_links` and `suggest_metadata`. An item names only what its receiver can see.
+Each suggestion goes to whoever can judge it (`route`, default `auto`): the task's assignee, else the managers of the
+file's folder, else your own person; `routed` in the answer says who got how many. What you sent on shows under
+"Sent for review"; suggestions others routed to your person appear in `agent_inbox_list` (`routed`). To accept many
+at once ("every link from this import with 70% or more") use `resolve_review_items`.
 
 1. When the person asked for the change ("link these", "this is the signed contract"), do it directly:
    `link_files`, `set_file_meta`. Suggest instead only when you are unsure or it is your own idea.
